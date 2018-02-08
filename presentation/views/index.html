@@ -306,21 +306,82 @@ class: middle
 class: middle
 .left-column[
 ### Vue.js
-### Another JS Framework?
+### Tools
 ]
 .right-column[
-- Dev Set Up
-- IDEs
-- Build Pipeline
+- Atom, VS Code, Visual Studio
+- Chrome Vue Plugin
+- Package manager:  NPM, JSPM, Bower
+- Node
+- Build Pipeline:  Webpack / Browserify / Gulp
 - Remember the complexity quote?
 ]
-
 
 ---
 
 template: inverse
 ## Remember the complexity quote?
 
+---
+class: middle
+.left-column[
+### Vue.js
+### Who loves gulp?
+]
+.right-column[
+## wait for it......
+]
+
+---
+
+template: inverse
+## Remember the complexity quote?
+
+---
+class: middle
+.left-column[
+### Vue.js
+### Single File Modules
+]
+.right-column[
+```html
+<template>
+	<div>
+		<app-header></app-header>
+		<section class="main-section section">
+			<div class="container content">
+				<router-view></router-view>
+			</div>
+		</section>
+		<app-footer></app-footer>
+	</div>
+</template>
+```
+```javascript
+<script>
+	import Header from './header.vue';
+	import Footer from './footer.vue';
+
+	export default {
+		components: {
+			'app-header': Header,
+			'app-footer': Footer
+		}
+	}
+</script>
+```
+
+```css
+<style lang="scss">
+	$primary: #287ab1;
+	@import '~bootstrap';
+
+	.columns{
+		flex-wrap: wrap;
+	}
+</style>
+```
+]
 ---
 class: middle
 .left-column[
