@@ -1,0 +1,14 @@
+{
+  "name": "presentation",
+  "version": "1.0.1",
+  "description": "presentation for jaxarcsig on devops",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "woodie westbrook",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
